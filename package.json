@@ -1,11 +1,17 @@
 {
-  "name": "web",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Diego Pagini",
-  "license": "MIT"
+	"name": "web-tailwind",
+	"version": "1.0.0",
+	"description": "A project made with tailwindcss",
+	"main": "index.js",
+	"scripts": {
+		"build": "tailwindcss build ./src/styles.css -o ./css/styles.css",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Diego Pagini",
+	"license": "MIT",
+	"devDependencies": {
+		"autoprefixer": "^10.2.4",
+		"postcss": "^8.4.21",
+		"tailwindcss": "^2.0.3"
+	}
 }
