@@ -548,6 +548,59 @@ video {
   height: auto;
 }
 
+/* body {
+		background-image: url('../img/pattern.png');
+	} */
+
+/* Fonts */
+
+@font-face {
+  font-family: 'TrebuchetMS';
+
+  src: url('fonts/TrebuchetMS.ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+
+  src: url('fonts/BebasNeue.otf');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WebSymbolsRegular';
+
+  src: url('fonts/websymbols-regular-webfont.eot');
+
+  src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+			url('fonts/websymbols-regular-webfont.woff') format('woff'),
+			url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+			url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+.symbol {
+  font-family: 'WebSymbolsRegular';
+}
+
+.bebas {
+  font-family: 'BebasNeue';
+}
+
+.trebuchet {
+  font-family: 'TrebuchetMS';
+}
+
 .container {
   width: 100%;
 }
@@ -4224,6 +4277,10 @@ video {
 
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-body-pattern {
+  background-image: url('../img/pattern.png');
 }
 
 .from-transparent {
@@ -33839,6 +33896,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-body-pattern {
+    background-image: url('../img/pattern.png');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -63407,6 +63468,10 @@ video {
 
   .md\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-body-pattern {
+    background-image: url('../img/pattern.png');
   }
 
   .md\:from-transparent {
@@ -92979,6 +93044,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-body-pattern {
+    background-image: url('../img/pattern.png');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -122549,6 +122618,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-body-pattern {
+    background-image: url('../img/pattern.png');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -152117,6 +152190,10 @@ video {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-body-pattern {
+    background-image: url('../img/pattern.png');
   }
 
   .\32xl\:from-transparent {
