@@ -11,9 +11,9 @@
 	</head>
 	<body class="bg-body-pattern bg-scroll">
 		<!-- Header -->
-		<header id="header" class="bg-black text-white h-20 bebas">
-			<div class="container w-11/12 mx-auto flex flex-row">
-				<div id="logo" class="flex-1">
+		<header id="header" class="bg-black text-white h-20 bebas xs:h-36">
+			<div class="md:container md:w-11/12 mx-auto flex md:flex-row xs:flex-col">
+				<div id="logo" class="flex-1 xs:mx-auto">
 					<div
 						class="group w-64 pt-0.5 pb-0.5 mt-4 ml-6 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-light-blue hover:text-black hover:bg-gray-200"
 					>
@@ -30,7 +30,9 @@
 				</div>
 
 				<nav class="flex-1">
-					<ul class="flex flex-row h-20 items-center justify-end text-2xl text-center mr-6">
+					<ul
+						class="flex flex-row h-20 items-center md:justify-end text-2xl text-center mr-6 xs:m-0 xs:text-center"
+					>
 						<li class="menu-item">
 							<a href="#" class="menu-item-a">Inicio</a>
 						</li>
@@ -48,5 +50,20 @@
 			</div>
 		</header>
 		<!-- Header -->
+
+		<section class="container w-11/12 mx-auto">
+			<!-- Banner -->
+			<div
+				id="banner"
+				class="h-28 w-full border-8 border-white overflow-hidden uppercase shadow m-5 mx-auto bg-banner bg-banner-position animate-bg-banner"
+			>
+				<h1
+					class="block text-white text-4xl font-normal tracking-wider m-7 mx-auto text-center text-banner animate-text-banner xs:text-2xl xs:mt-7"
+				>
+					Desarrollo web con Taillwind
+				</h1>
+			</div>
+			<!-- Banner -->
+		</section>
 	</body>
 </html>

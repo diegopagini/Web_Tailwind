@@ -46,14 +46,19 @@
 	.trebuchet {
 		font-family: 'TrebuchetMS';
 	}
-}
 
-@layer components {
-	.menu-item {
-		@apply mr-5 ml-5 tracking-wider flex-none;
-	}
+	@layer components {
+		.menu-item {
+			@apply mr-5 ml-5 tracking-wider flex-none xs:flex-1;
+		}
 
-	.menu-item-a {
-		@apply block transition duration-200 hover:text-light-blue transform hover:scale-125;
+		.menu-item-a {
+			@apply block transition duration-200 hover:text-light-blue transform hover:scale-125;
+		}
+
+		.text-banner {
+			font-family: 'BebasNeue';
+			text-shadow: 2px 2px 1px black;
+		}
 	}
 }
