@@ -3,126 +3,392 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>TAILWIND</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-		<title>Tailwind</title>
 	</head>
 	<body class="bg-body-pattern bg-scroll">
-		<!-- Header -->
-		<header id="header" class="bg-black text-white h-20 bebas xs:h-36">
-			<div class="md:container md:w-11/12 mx-auto flex md:flex-row xs:flex-col">
+		<!--CABECERA-->
+		<header id="header" class="h-20 bg-black text-white bebas xs:h-36">
+			<div class="container w-11/12 mx-auto flex md:flex-row xs:flex-col">
 				<div id="logo" class="flex-1 xs:mx-auto">
 					<div
-						class="group w-64 pt-0.5 pb-0.5 mt-4 ml-6 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-light-blue hover:text-black hover:bg-gray-200"
+						class="group w-64 pt-0.5 pb-0.5 mt-4 ml-6 bg-gray-400 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:text-black hover:bg-gray-200"
 					>
 						<span
 							class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-low group-hover:animate-none group-hover:animate-from-bellow"
 							>S</span
 						>
+
 						<h3
 							class="block float-right text-4xl mt-1.5 mr-16 transition duration-100 group-hover:animate-from-right"
 						>
-							Tailwind
+							TAILWIND
 						</h3>
 					</div>
 				</div>
 
 				<nav class="flex-1">
 					<ul
-						class="flex flex-row h-20 items-center md:justify-end text-2xl text-center mr-6 xs:m-0 xs:text-center"
+						class="flex flex-row h-20 items-center text-2xl text-center mr-6 xs:mr-0 xs:text-center md:justify-end"
 					>
 						<li class="menu-item">
-							<a href="#" class="menu-item-a">Inicio</a>
+							<a href="#" class="menu-item-a">INICIO</a>
 						</li>
 						<li class="menu-item">
-							<a href="#" class="menu-item-a">Blog</a>
+							<a href="#" class="menu-item-a">BLOG</a>
 						</li>
 						<li class="menu-item">
-							<a href="#" class="menu-item-a">Formación</a>
+							<a href="#" class="menu-item-a">FORMACIÓN</a>
 						</li>
 						<li class="menu-item">
-							<a href="#" class="menu-item-a">Contacto</a>
+							<a href="#" class="menu-item-a">CONTACTO</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<!-- Header -->
+		<!--FIN DE CABECERA-->
 
+		<!-- INICIO SECCION INFORMACION -->
 		<section class="container w-11/12 mx-auto">
-			<!-- Banner -->
+			<!--INICIO BANNER-->
 			<div
 				id="banner"
-				class="h-28 w-full border-8 border-white overflow-hidden uppercase shadow m-5 mx-auto bg-banner bg-banner-position animate-bg-banner"
+				class="w-full h-28 mx-auto border-8 border-white overflow-hidden shadow m-5 bg-banner bg-banner-position animate-bg-banner"
 			>
 				<h1
-					class="block text-white text-4xl font-normal tracking-wider m-7 mx-auto text-center text-banner animate-text-banner xs:text-2xl xs:mt-7"
+					class="text-banner block text-white text-4xl font-normal tracking-wider m-7 mx-auto text-center animate-text-banner xs:text-2xl xs:mt-8"
 				>
-					Desarrollo web con Taillwind
+					TAILWIND
 				</h1>
 			</div>
-			<!-- Banner -->
+			<!--FIN BANNER-->
 
-			<!-- Cards -->
-			<div id="cards" class="flex flex-nowrap justify-between mt-5">
+			<!--INICIO TARJETAS-->
+			<div id="cards" class="flex flex-nowrap justify-between">
 				<div class="card">
 					<span
-						class="card-icon group-hover:text-light-blue transform group-hover:scale-125 group-hover:animate-show-card-icon"
+						class="card-icon transform group-hover:scale-150 group-hover:text-azul-claro group-hover:animate-show-card-icon"
 						>H</span
 					>
-					<h2 class="card-category group-hover:text-white">Desarrollo web</h2>
-					<p class="card-description group-hover:text-white">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, earum?
+					<h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
+						Desarrollo web
+					</h2>
+					<p class="card-description group-hover:text-white group-hover:animate-show-card-desc">
+						Aprende los principales lenguajes de desarrollo web
 					</p>
 				</div>
 
 				<div class="card">
 					<span
-						class="card-icon group-hover:text-light-blue transform group-hover:scale-125 group-hover:animate-show-card-icon"
+						class="card-icon transform group-hover:scale-150 group-hover:text-azul-claro group-hover:animate-show-card-icon"
 						>_</span
 					>
-					<h2 class="card-category group-hover:text-white">Sistemas operativos</h2>
-					<p class="card-description group-hover:text-white">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, earum?
+					<h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
+						Sistemas operativos
+					</h2>
+					<p class="card-description group-hover:text-white group-hover:animate-show-card-desc">
+						Aprende a administrar sistemas operativos
 					</p>
 				</div>
 
 				<div class="card">
 					<span
-						class="card-icon group-hover:text-light-blue transform group-hover:scale-125 group-hover:animate-show-card-icon"
+						class="card-icon transform group-hover:scale-150 group-hover:text-azul-claro group-hover:animate-show-card-icon"
 						>S</span
 					>
-					<h2 class="card-category group-hover:text-white">Hardware</h2>
-					<p class="card-description group-hover:text-white">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, earum?
+					<h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
+						Hardware
+					</h2>
+					<p class="card-description group-hover:text-white group-hover:animate-show-card-desc">
+						Conoce todo acerca del hardware
 					</p>
 				</div>
 
 				<div class="card">
 					<span
-						class="card-icon group-hover:text-light-blue transform group-hover:scale-125 group-hover:animate-show-card-icon"
+						class="card-icon transform group-hover:scale-150 group-hover:text-azul-claro group-hover:animate-show-card-icon"
 						>u</span
 					>
-					<h2 class="card-category group-hover:text-white">Redes e internet</h2>
-					<p class="card-description group-hover:text-white">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, earum?
+					<h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
+						Redes e internet
+					</h2>
+					<p class="card-description group-hover:text-white group-hover:animate-show-card-desc">
+						Configura y administra redes y servidores
 					</p>
 				</div>
 
 				<div class="card">
 					<span
-						class="card-icon group-hover:text-light-blue transform group-hover:scale-125 group-hover:animate-show-card-icon"
+						class="card-icon transform group-hover:scale-150 group-hover:text-azul-claro group-hover:animate-show-card-icon"
 						>a</span
 					>
-					<h2 class="card-category group-hover:text-white">Base de datos</h2>
-					<p class="card-description group-hover:text-white">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, earum?
+					<h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
+						Bases de datos
+					</h2>
+					<p class="card-description group-hover:text-white group-hover:animate-show-card-desc">
+						Aprende a trabajar con bases de datos
 					</p>
 				</div>
 			</div>
-			<!-- Cards -->
+			<!--FIN TARJETAS-->
 		</section>
+		<!-- FIN SECCION INFORMACION -->
+
+		<!-- INICIO CONTENIDO PRINCIPAL -->
+		<main class="container w-11/12 mt-5 mx-auto flex xs:flex-col md:flex-row">
+			<!--INICIO BARRA LATERAL-->
+			<aside id="lateral" class="order-2 flex-none w-72 min-h-full xs:w-full xs:m-0">
+				<h3 class="aside-header">BUSCAR</h3>
+				<div
+					id="search"
+					class="w-11/12 h-7 m-2.5 mx-auto bg-white border border-gray-200 rounded shadow-inner"
+				>
+					<form>
+						<input
+							type="text"
+							class="w-10/12 h-6 border-none pl-1.5 rounded-md bg-transparent text-gray-500 transition duration-300 outline-none focus:outline-none"
+						/>
+						<input
+							type="button"
+							value="L"
+							class="symbol h-6 cursor-pointer text-base bg-transparent border-none text-gray-500 pl-2"
+						/>
+					</form>
+				</div>
+
+				<h3 class="aside-header">LOGIN</h3>
+				<div id="login" class="aside-box">
+					<form>
+						<label for="email" class="login-icon">U</label>
+						<input type="email" id="email" class="login-input" />
+
+						<label for="password" class="login-icon text-xl ml-7 mt-6">w</label>
+						<input type="password" id="password" class="login-input" />
+
+						<input type="submit" value="Entrar" class="login-button" />
+						<input type="reset" value="Limpiar" class="login-button ml-1" />
+
+						<a href="#" class="login-link">Registrate aquí</a>
+						<a href="#" class="login-link">¿Has olvidado tu contraseña?</a>
+					</form>
+				</div>
+
+				<h3 class="aside-header">REDES SOCIALES</h3>
+				<div id="social-media" class="aside-box h-48">
+					<div class="group twitter">
+						<a href="#" class="social-icon">t</a>
+						<p
+							class="social-overlay group-hover:opacity-100 group-hover:transform group-hover:translate-x-1"
+						>
+							Twitter
+						</p>
+					</div>
+
+					<div class="group facebook">
+						<a href="#" class="social-icon">f</a>
+						<p
+							class="social-overlay group-hover:opacity-100 group-hover:transform group-hover:translate-x-1"
+						>
+							Facebook
+						</p>
+					</div>
+
+					<div class="group youtube">
+						<a href="#" class="social-icon">y</a>
+						<p
+							class="social-overlay group-hover:opacity-100 group-hover:transform group-hover:translate-x-1"
+						>
+							Youtube
+						</p>
+					</div>
+				</div>
+
+				<h3 class="aside-header">PATROCINADORES</h3>
+				<div id="sponsors" class="aside-box"></div>
+			</aside>
+			<!--FIN BARRA LATERAL-->
+
+			<!--INICIO ARTICULOS-->
+			<section class="order-1 flex-grow mr-10 xs:w-full xs:mr-0">
+				<h2 class="articles-header">Últimos artículos</h2>
+
+				<article class="article-item">
+					<div class="article-data">
+						<span>Fecha: 10 marz</span>
+						<span>Categoría: Pruebas</span>
+					</div>
+
+					<h4 class="article-head">
+						<a href="#">Titulo del artículo</a>
+					</h4>
+
+					<p class="article-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum elit eu diam
+						fringilla, a finibus est sollicitudin. Fusce ultricies suscipit enim, at tempor magna
+						consectetur quis. Donec ornare feugiat sem, ut tincidunt leo rutrum ut. Nullam suscipit
+						dapibus nunc ut egestas. Vestibulum eget ante augue.
+					</p>
+				</article>
+
+				<article class="article-item">
+					<div class="article-data">
+						<span>Fecha: 10 marz</span>
+						<span>Categoría: Pruebas</span>
+					</div>
+
+					<h4 class="article-head">
+						<a href="#">Titulo del artículo</a>
+					</h4>
+
+					<p class="article-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum elit eu diam
+						fringilla, a finibus est sollicitudin. Fusce ultricies suscipit enim, at tempor magna
+						consectetur quis. Donec ornare feugiat sem, ut tincidunt leo rutrum ut. Nullam suscipit
+						dapibus nunc ut egestas. Vestibulum eget ante augue.
+					</p>
+				</article>
+
+				<article class="article-item">
+					<div class="article-data">
+						<span>Fecha: 10 marz</span>
+						<span>Categoría: Pruebas</span>
+					</div>
+
+					<h4 class="article-head">
+						<a href="#">Titulo del artículo</a>
+					</h4>
+
+					<p class="article-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum elit eu diam
+						fringilla, a finibus est sollicitudin. Fusce ultricies suscipit enim, at tempor magna
+						consectetur quis. Donec ornare feugiat sem, ut tincidunt leo rutrum ut. Nullam suscipit
+						dapibus nunc ut egestas. Vestibulum eget ante augue.
+					</p>
+				</article>
+
+				<article class="article-item">
+					<div class="article-data">
+						<span>Fecha: 10 marz</span>
+						<span>Categoría: Pruebas</span>
+					</div>
+
+					<h4 class="article-head">
+						<a href="#">Titulo del artículo</a>
+					</h4>
+
+					<p class="article-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum elit eu diam
+						fringilla, a finibus est sollicitudin. Fusce ultricies suscipit enim, at tempor magna
+						consectetur quis. Donec ornare feugiat sem, ut tincidunt leo rutrum ut. Nullam suscipit
+						dapibus nunc ut egestas. Vestibulum eget ante augue.
+					</p>
+				</article>
+
+				<article class="article-item">
+					<div class="article-data">
+						<span>Fecha: 10 marz</span>
+						<span>Categoría: Pruebas</span>
+					</div>
+
+					<h4 class="article-head">
+						<a href="#">Titulo del artículo</a>
+					</h4>
+
+					<p class="article-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum elit eu diam
+						fringilla, a finibus est sollicitudin. Fusce ultricies suscipit enim, at tempor magna
+						consectetur quis. Donec ornare feugiat sem, ut tincidunt leo rutrum ut. Nullam suscipit
+						dapibus nunc ut egestas. Vestibulum eget ante augue.
+					</p>
+				</article>
+
+				<article class="article-item">
+					<div class="article-data">
+						<span>Fecha: 10 marz</span>
+						<span>Categoría: Pruebas</span>
+					</div>
+
+					<h4 class="article-head">
+						<a href="#">Titulo del artículo</a>
+					</h4>
+
+					<p class="article-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum elit eu diam
+						fringilla, a finibus est sollicitudin. Fusce ultricies suscipit enim, at tempor magna
+						consectetur quis. Donec ornare feugiat sem, ut tincidunt leo rutrum ut. Nullam suscipit
+						dapibus nunc ut egestas. Vestibulum eget ante augue.
+					</p>
+				</article>
+			</section>
+			<!--FIN ARTICULOS-->
+		</main>
+		<!-- FIN CONTENIDO PRINCIPAL -->
+
+		<!--INICIO PIE DE PAGINA-->
+		<footer id="footer" class="w-full h-auto bg-black text-white overflow-hidden">
+			<div class="container w-11/12 mx-auto flex flex-row xs:flex-col md:flex-col lg:flex-row">
+				<div id="menu-footer" class="footer-box mt-10">
+					<h5 class="footer-header">MENÚ</h5>
+					<ul class="footer-menu">
+						<li><a href="#">INICIO</a></li>
+						<li><a href="#">BLOG</a></li>
+						<li><a href="#">FORMACIÓN</a></li>
+						<li><a href="#">CONTACTO</a></li>
+					</ul>
+				</div>
+
+				<div id="location" class="footer-box">
+					<h5 class="footer-header">¿DONDE ESTAMOS?</h5>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.636975877888!2d2.185206586579545!3d41.38762452958316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42386118e65a3d70!2sParque%20de%20la%20Ciudadela!5e0!3m2!1ses!2ses!4v1615751688642!5m2!1ses!2ses"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						class="w-full h-80 mt-3 border-4 border-gray-400 rounded-md shadow-md"
+					></iframe>
+				</div>
+
+				<div id="info" class="footer-box">
+					<h5 class="footer-header">Desarrollado con</h5>
+					<p class="mb-6">
+						<img
+							class="block mx-auto"
+							src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
+						/>
+					</p>
+
+					<h5 class="footer-header">Optimizado para</h5>
+					<div class="browsers flex flex-row space-x-5 mb-6">
+						<a href="#">
+							<img src="img/firefox-icon.png" />
+						</a>
+						<a href="#">
+							<img src="img/chrome.png" />
+						</a>
+						<a href="#">
+							<img src="img/Opera_256x256.png" />
+						</a>
+						<a href="#">
+							<img src="img/safari.png" />
+						</a>
+						<a href="#">
+							<img src="img/android.png" />
+						</a>
+						<a href="#">
+							<img src="img/ios.png" />
+						</a>
+					</div>
+
+					<h5 class="footer-header">AUTOR</h5>
+					<p>&copy; Víctor Robles WEB - victorroblesweb.es</p>
+				</div>
+			</div>
+		</footer>
+		<!--FIN PIE DE PAGINA-->
 	</body>
 </html>

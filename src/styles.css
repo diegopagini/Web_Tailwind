@@ -5,11 +5,13 @@
 @tailwind utilities;
 
 @layer base {
-	/* body {
-		background-image: url('../img/pattern.png');
-	} */
+	/*
+    body{
+        background-image: url('../img/pattern.png');
+    }
+    */
 
-	/* Fonts */
+	/*FUENTES*/
 	@font-face {
 		font-family: 'TrebuchetMS';
 		src: url('fonts/TrebuchetMS.ttf');
@@ -46,37 +48,366 @@
 	.trebuchet {
 		font-family: 'TrebuchetMS';
 	}
+}
 
-	@layer components {
-		.menu-item {
-			@apply mr-5 ml-5 tracking-wider flex-none xs:flex-1;
-		}
+@layer components {
+	/*ESTILOS MENU CABECERA*/
 
-		.menu-item-a {
-			@apply block transition duration-200 hover:text-light-blue transform hover:scale-125;
-		}
+	.menu-item {
+		@apply mr-5 
+            ml-5 
+            tracking-wider 
+            flex-none
+            xs:flex-1;
+	}
 
-		.text-banner {
-			font-family: 'BebasNeue';
-			text-shadow: 2px 2px 1px black;
-		}
+	.menu-item-a {
+		@apply block 
+            transition 
+            duration-200 
+            hover:text-azul-claro 
+            transform 
+            hover:scale-125;
+	}
 
-		.card {
-			@apply group flex-1 h-80 border-2 border-gray-200 shadow-md bg-white overflow-hidden m-5 pl-5 pr-5 mt-10 cursor-pointer transition duration-300 hover:bg-black;
-		}
+	/*ESTILOS BANNER*/
 
-		.card-icon {
-			font-family: 'WebSymbolsRegular';
-			@apply block w-full h-32 text-5xl text-center mt-12 mx-auto transition duration-300;
-		}
+	.text-banner {
+		font-family: 'BebasNeue';
+		text-shadow: 2px 2px 1px black;
+	}
 
-		.card-category {
-			@apply w-full h-12 text-xl font-bold text-center text-light-blue transition duration-300;
-		}
+	/*ESTILOS MENU TARJETAS*/
+	.card {
+		@apply group
+            flex-1
+            h-80
+            border-2
+            border-gray-200
+            shadow-md
+            bg-white
+            overflow-hidden
+            m-5
+            mt-10
+            pl-5
+            pr-5
+            cursor-pointer
+            transition
+            duration-300
+            hover:bg-black
 
-		.card-description {
-			font-family: 'TrebuchetMS';
-			@apply text-center text-light-blue text-base transition duration-300;
-		}
+            xs:h-40
+            xs:m-2
+            md:h-40
+            md:m-2
+            lg:h-80
+            lg:m-5;
+	}
+
+	.card-icon {
+		font-family: 'WebSymbolsRegular';
+		@apply block
+            w-full
+            h-32
+            text-5xl
+            text-center
+            mt-12
+            pt-5
+            mx-auto
+            transition
+            duration-300
+
+            xs:mt-3
+            xs:h-20
+            md:mt-3
+            md:h-20
+            lg:mt-12
+            lg:h-32;
+	}
+
+	.card-category {
+		font-family: 'TrebuchetMS';
+		@apply w-full
+            h-12
+            text-xl
+            font-bold
+            text-center
+            text-azul-oscuro
+            transition
+            duration-300
+
+            xs:text-base
+            xs:h-6
+            md:text-base
+            md:h-6
+            lg:text-lg
+            lg:h-12;
+	}
+
+	.card-description {
+		font-family: 'TrebuchetMS';
+		@apply text-center
+            text-azul-oscuro
+            text-base
+            transition
+            duration-300
+
+            xs:hidden
+            md:hidden
+            lg:block
+            lg:text-sm
+            lg:mt-1.5
+            xl:text-base
+            xl:mt-1;
+	}
+
+	.articles-header {
+		font-family: 'BebasNeue';
+		background: url('../img/pxgray.png'), white;
+		@apply block
+            w-full
+            h-20
+            text-center
+            text-4xl
+            font-medium
+            tracking-widest
+            pt-5
+            border
+            shadow-header3D;
+	}
+
+	.article-item {
+		@apply w-full
+            h-auto
+            border
+            border-gray-200
+            m-10
+            mx-auto
+            p-2.5
+            bg-white
+            text-black
+            shadow-md;
+	}
+
+	.article-data {
+		@apply float-right
+            bg-gray-800
+            text-white
+            h-10
+            leading-6
+            p-2
+            -m-2.5
+            text-sm
+            rounded-bl-lg;
+	}
+
+	.article-data span {
+		@apply m-2.5;
+	}
+
+	.article-head {
+		@apply block
+            text-2xl
+            m-1;
+	}
+
+	.article-head a {
+		@apply font-semibold text-azul-oscuro hover:underline;
+	}
+
+	.article-description {
+		@apply block
+            mt-3
+            mb-3
+            text-base
+            font-sans
+            font-normal;
+	}
+
+	.aside-header {
+		font-family: 'BebasNeue';
+		background: url('../img/pxgray.png'), white;
+		@apply block
+            h-11
+            leading-10
+            text-3xl
+            font-medium
+            tracking-widest
+            pl-3.5
+            pt-1
+            mb-3.5
+            border
+            shadow-header3D;
+	}
+
+	.aside-box {
+		@apply w-10/12
+            max-w-xs
+            h-60
+            mt-5
+            mb-7
+            mx-auto
+            pt-1
+            bg-white
+            shadow-box
+            xs:w-60;
+	}
+
+	.login-icon {
+		@apply symbol
+            text-center
+            absolute
+            ml-7
+            mt-1
+            h-8;
+	}
+
+	.login-input {
+		@apply block
+            mx-auto
+            mt-5
+            w-10/12
+            h-8
+            border
+            border-gray-300
+            shadow-inner
+            pl-7
+            rounded-md
+            text-gray-500
+            transition
+            duration-300
+            outline-none
+            focus:outline-none
+            focus:text-gray-600;
+	}
+
+	.login-button {
+		@apply trebuchet
+            w-24
+            h-8
+            mt-5
+            ml-5
+            mb-5
+            text-center
+            text-white
+            text-base
+            font-light
+            border
+            border-azul-oscuro
+            bg-gradient-to-b from-azul-claro to-azul-oscuro
+            rounded-none
+            cursor-pointer
+            transition
+            duration-300
+            hover:shadow-md;
+	}
+
+	.login-link {
+		@apply block
+            ml-4
+            text-sm
+            text-gray-600
+            hover:underline
+            hover:text-azul-oscuro;
+	}
+
+	.social-icon {
+		@apply symbol
+            block
+            text-gray-700
+            text-3xl
+            mt-3
+            mb-5
+            ml-5;
+	}
+
+	.social-overlay {
+		@apply block
+            absolute
+            h-10
+            pl-2
+            pr-2
+            pt-1
+            ml-16
+            -mt-14
+            font-sans
+            font-bold 
+            text-gray-700
+            tracking-wide
+            shadow-md
+            border-4
+            border-white
+            bg-gray-100
+            cursor-pointer
+            transition
+            duration-300
+            opacity-0
+            transform
+            -translate-x-3/4;
+	}
+
+	.footer-box {
+		@apply trebuchet
+            flex-1
+            w-80
+            h-96
+            m-10
+            text-center
+            text-white
+
+            xs:w-11/12
+            xs:mx-auto
+            xs:mt-3
+            md:w-11/12
+            md:mx-auto
+            md:mt-3
+            lg:w-80
+            lg:m-10;
+	}
+
+	.footer-header {
+		background: url('../img/pxgray.png'), white;
+		@apply bebas
+            tracking-wide
+            text-center
+            text-4xl
+            text-black
+            rounded-md
+            p-1.5
+            pt-2
+            mb-4;
+	}
+
+	.footer-menu {
+		@apply text-left 
+            m-5 
+            text-2xl;
+	}
+
+	.footer-menu li {
+		@apply mt-3
+            p-1
+            border-b-2
+            border-gray-400
+            transition
+            duration-300;
+	}
+
+	.footer-menu li a {
+		@apply block
+            h-10
+            transition
+            duration-300
+            text-azul-claro
+            hover:text-white;
+	}
+
+	.browsers a {
+		@apply flex-1
+            mb-1.5;
+	}
+
+	.browsers a img {
+		@apply w-11;
 	}
 }
