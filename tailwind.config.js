@@ -20,6 +20,7 @@ module.exports = {
 				'from-right': 'fromRight 300ms linear',
 				'bg-banner': 'backBanner 10s linear',
 				'text-banner': 'showBannerText 10s linear',
+				'show-card-icon': 'showCardIcon 300ms linear',
 			},
 			screens: {
 				xs: { max: '768px' },
@@ -74,11 +75,22 @@ module.exports = {
 						'text-shadow': '2px 2px 1px black',
 					},
 				},
+				showCardIcon: {
+					from: {
+						transform: 'translateY(-200%)',
+					},
+					to: {
+						transform: 'translateY(0%)',
+					},
+				},
 			},
 		},
 	},
 	variants: {
 		animation: ['responsive', 'hover', 'group-hover'],
 		animate: ['responsive', 'hover', 'group-hover'],
+		fontSize: ['responsive', 'hover', 'group-hover'],
+		transform: ['responsive', 'hover', 'group-hover'],
+		scale: ['responsive', 'hover', 'group-hover'],
 	},
 };
